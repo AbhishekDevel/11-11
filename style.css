@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'poppins', sans-serif;
+  overflow: hidden;
 }
 header{
   width: 100%;
@@ -11,4 +12,88 @@ header{
   color: #fff;
   padding: 0 8.5%;
   position: relative;
+}
+nav{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 0 10px;
+}
+.logo{
+  width: 120px;
+  cursor: pointer;
+}
+.menu-icon{
+  width: 35px;
+  cursor: pointer;
+}
+nav ul {
+  flex: 1;
+  text-align: right;
+  padding-right: 0px;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+nav ul li a:hover{
+  color:#fff724;
+}
+.text-box{
+  margin-top: 15px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  line-height: 26px;
+}
+.auto-input{
+  color: #fff724;
+}
+.text-box h1{
+  font-size: 75px;
+  line-height: 160px;
+}
+.text-box a{
+  margin-top: 30px;
+  display: inline-block;
+  border-radius: 6px;
+  border: 2px solid #fff724;
+  color: #fff724;
+  padding: 10px 30px;
+  text-decoration: none;
+}
+.text-box .btn{
+  background: #fff724;
+  color: #000;
+  margin-left: 30px;
+  font-weight: 600;
+}
+.user-img{
+  width: 490px;
+  height: 39rem;
+  position: absolute;
+  right: 0;
+  bottom: 60%;
+  margin-right: -3em;
+}
+@media only screen and (max-width: 750px) {
+  .menu-icon {
+    max-width: 0;
+  }
+  .user-img{
+    max-width: 0;
+  }
+  .btn-div{
+    display: flex;
+    font-size: 0.7em;
+  }
 }
